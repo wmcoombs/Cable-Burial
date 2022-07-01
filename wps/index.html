@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Material Point Method - AMPLE - A Material Point Learning Environment</title>
+	<title>Offshore Cable Burial: How deep is deep enough?</title>
 	<meta name="description" content="You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -40,21 +40,16 @@
       <nav class="main-nav">
         <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
         <ul>
-          <li><a href="/">Homepage</a></li>
-          <li><a href="/mpm">MPM</a></li>
-          <li><a href="/principles">Development</a></li>
-          <li><a href="/formulation">Formulation</a></li>
-          <li><a href="/structure">Code Structure</a></li>
-          <li><a href="/tests">Test Cases</a></li>
-          <li><a href="/publications">Publications</a></li>
-          <li><a href="/versions">Versions</a></li>
-          <li><a href="/acknowledgements">acknowledgements</a></li>
-          <li><a href="/download">Download</a></li>
+          <li><a href="/Cable-Burial/">Homepage</a></li>
+          <li><a href="/Cable-Burial/overview">Project Overview</a></li>
+          <li><a href="/Cable-Burial/wps">Work Packages</a></li>
+          <li><a href="/Cable-Burial/partners">Project Parners</a></li>
+          <li><a href="/Cable-Burial/publications">Publications</a></li>
           <!--<li><a href="/other">Other pages</a></li>-->
           <li><a href="/about">About</a></li>
         </ul>
       </nav>
-      <p class="logo"><a href="/">AMPLE&#58;  A Material Point Learning Environment</a></p>
+      <p class="logo"><a href="/">Offshore Cable Burial: How deep is deep enough?</a></p>
       <div class="search-icon-container">
         <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
       </div>
@@ -64,27 +59,32 @@
 
   <article class="article-page">
     <div class="page-image">
-      <div class="cover-image" style="background: url(/assets/img/collapse1.jpg) center no-repeat; background-size: cover;"></div>
+      <div class="cover-image" style="background: url(/Cable-Burial/assets/img/team.jpg) center no-repeat; background-size: cover;"></div>
     </div>
     <div class="wrapper">
       <div class="page-content">
         <div class="header-page">
-          <h1 class="page-title">Material Point Method</h1>
+          <h1 class="page-title">Work Packages</h1>
           <!--<div class="page-date"><time datetime="2019-01-08 06:00:00 +0000">2019, Jan 08</time></div>-->
         </div>
-        <p>Numerical approaches based on Lagrangian mechanics, particularly using the finite element method, dominate the analysis of solid mechanics problems.  However there are issues with mesh-based Lagrangian approaches for problems involving very large deformation in that the discretisation used to analyse the physical problem becomes distorted leading to inaccurate results and, in extreme cases, eventual breakdown of the numerics due to element inversion.</p>
+      <p>OffShore Wind (OSW) power cable failures currently account for 75% of the cost of all insurance claims associated with OSW projects and faults typically take 100+ days to rectify.  In shallow waters cables must be protected from anchors/fishing gear and the primary protection method is to bury the cable below the seabed.  The burial depth is a probabilistic compromise between economic cost of burial and risk to the cable being damaged.</p>
 
-<p>The <strong>Material Point Method</strong> (MPM) is an alternative to pure Lagrangian approaches and is well suited to problems involving very large deformations.  The method was developed in the 1990’s by Sulsky <em>et al.</em> [1] as a solid mechanics extension to the FLuid Implicit Particle (FLIP) method [2] which itself was developed from the Particle-In-Cell (PIC) method [3].  In the material point method, equilibrium computations take place on a background grid but the calculations are based on information (mass, volume, stress, state variables, etc.) held at material points that are convected through the background grid as the material deforms. This allows computations to take place on an undistorted background mesh (structured or unstructured) whilst modelling problems involving very large deformations. One way to summarise the material point method is: <em>a finite element method where the integration points (material points) are allowed to move independently of the mesh</em>.</p>
-
-<p>AMPLE, unlike most of the MPM community, adopts an implicit formulation.  The key steps in an implicit implementation of the material point method are shown below.</p>
-
-<p><img src="/assets/img/MPMsteps.jpg" alt="MPM steps" /></p>
+      <p>The planned rapid expansion of offshore wind around the UK - installed capacity increasing 7.5 times over the next 30 years - will require new cable installations within some of the busiest shipping/fishing waters in the world and it is essential that these new cables are installed at the appropriate depth.  The industry currently lacks appropriate scientific tools to determine anchor penetration depths in different soil conditions relying instead on a binary switch between two cases based on vague descriptive soil conditions.  This approach has been shown to be highly conservative in some soils leading to unnecessarily deep (and costly) burial.  However, it is clearly under-conservative in other conditions as anchor-cable interactions dominate cable failures (accounting for 85% of failures).   This project, lead by Durham University in collaboration with the University of Dundee and the British Geological Survey (BGS), will deliver an anchor penetration prediction tool aligned to the Site Investigation (SI) data available along cabling routes.  We will provide an industry usable anchor penetration model allowing the OSW sector to answer the key cable burial question -  <em>how deep is deep enough?</em></p>
 
 <hr />
 
-<p>[1] D. Sulsky, Z. Chen, H. Schreyer, A particle method for history-dependent materials, Computer Methods in Applied Mechanics and Engineering 118 (1994) 179–196.<br />
-[2] J.U. Brackbill, H.M. Ruppel, FLIP - A method for adaptively zoned, particle-in-cell calculations of fluid flows in two dimensions, Journal of Computational Physics 65 (1986), 314-343.<br />
-[3] F. Harlow, The particle-in-cell computing method for fluid dynamics, Methods for Computational Physics 3 (1964). <br /></p>
+<p><img src="/Cable-Burial/assets/img/wps.jpg" alt="Research Team" /></p>
+
+<hr />
+      
+<p>The research project has the following objectives:</p>
+
+<ol>
+  <li>to reduce the Levelised Cost of Energy (LCoE) of future OSW projects through: (i) avoiding excessive Depth of Burial (DoB), which are expensive due to associated increases in vessel capacity, time for ploughing and need for multi-pass operations; (ii) avoidance of expensive remedial measures, such as post-burial rock dumping; and (iii) reducing the risk of external aggression to a cable by appropriate DoB for a given soil profile;</li>
+  <li>to develop a scientifically sound, industry usable, freely available Cone Penetration Test (CPT)-based anchor penetration depth tool for diverse soil conditions via physical experimentation and advanced numerical modelling;</li>
+  <li>to provide a pathway to integrate of the developed deterministic tool within the industry-standard probabilistic Cable Burial Risk Assessment (CBRA) process; and </li>
+  <li>to produce two open access decision-making BGS mapping layers: (i) anchor penetration based on the underlying sediment profile, geology and existing site investigation data across the UK Continental Shelf and (ii) cable-anchor interaction risk layer, quantifying risk in relation to areas of high marine traffic. </li>
+</ol>
 
 
         <div class="page-footer">
@@ -100,10 +100,10 @@
           </div><!-- End Share -->
         </div>
         <section class="author-box">
-  <img src="/assets/img/plate.jpg" alt="AMPLE&#58;  A Material Point Learning Environment" class="author-img">
+  <img src="/Cable-Burial/assets/img/logos.jpg" alt="Offshore Cable Burial&#58; How deep is deep enough?" class="author-img">
   <div class="author-desc">
-    <h2>AMPLE&#58;  A Material Point Learning Environment</h2>
-    <p>AMPLE was developed to address the sevre learning curve for researchers wishing to understand, and start using, the material point method. The software was developed at Durham University between 2014 and 2018 by Dr Will Coombs as a platform to test our new research ideas and understand the impact of adopting different material point variants. AMPLE was first released in January 2019 at the 2nd International Conference on the Material Point Method held at Cambridge University, UK.
+    <h2>Offshore Cable Burial&#58; How deep is deep enough?</h2>
+    <p>This Engineering and Physical Sciences Research Council (EPSRC)-funded research project is a collaboration between Durham University, the University of Dundee and the Britical Geological Survey.  The project is led by Professor Will Coombs at Durham University and will run between February 2022 and July 2025.   The research supported by a team of indsutrial partners, including: Bruce Anchors, Cathie Associates, Global Offshore, Lloyds Register, Orsted and The Crown Estate. 
 </p>
     <ul>
       
@@ -175,7 +175,7 @@
 
   <footer class="main-footer">
   <div class="copyright">
-    <p>2020 &copy; AMPLE&#58;  A Material Point Learning Environment</p>
+    <p>2020 &copy; Offshore Cable Burial&#58;   How deep is deep enough?</p>
   </div>
   <section class="about-body">
     <ul class="contact-list">
@@ -204,7 +204,7 @@
     
 
     
-      <li class="researchgate"><a href="https://www.researchgate.net/profile/William_Coombs3" target="_blank"><i class="ai ai-researchgate"></i></a></li>
+      <li class="researchgate"><a href="https://www.researchgate.net/project/Offshore-Cable-Burial-How-deep-is-deep-enough" target="_blank"><i class="ai ai-researchgate"></i></a></li>
     
 
     
