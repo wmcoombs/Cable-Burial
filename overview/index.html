@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Material Point Method - AMPLE - A Material Point Learning Environment</title>
+	<title>Offshore Cable Burial: How deep is deep enough?</title>
 	<meta name="description" content="You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -41,20 +41,15 @@
         <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
         <ul>
           <li><a href="/">Homepage</a></li>
-          <li><a href="/mpm">MPM</a></li>
-          <li><a href="/principles">Development</a></li>
-          <li><a href="/formulation">Formulation</a></li>
-          <li><a href="/structure">Code Structure</a></li>
-          <li><a href="/tests">Test Cases</a></li>
+          <li><a href="/overview">Project Overview</a></li>
+          <li><a href="/wps">Work Packages</a></li>
+          <li><a href="/partners">Project Parners</a></li>
           <li><a href="/publications">Publications</a></li>
-          <li><a href="/versions">Versions</a></li>
-          <li><a href="/acknowledgements">acknowledgements</a></li>
-          <li><a href="/download">Download</a></li>
           <!--<li><a href="/other">Other pages</a></li>-->
           <li><a href="/about">About</a></li>
         </ul>
       </nav>
-      <p class="logo"><a href="/">AMPLE&#58;  A Material Point Learning Environment</a></p>
+      <p class="logo"><a href="/">Offshore Cable Burial: How deep is deep enough?</a></p>
       <div class="search-icon-container">
         <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
       </div>
@@ -69,16 +64,16 @@
     <div class="wrapper">
       <div class="page-content">
         <div class="header-page">
-          <h1 class="page-title">Material Point Method</h1>
+          <h1 class="page-title">Project Overview</h1>
           <!--<div class="page-date"><time datetime="2019-01-08 06:00:00 +0000">2019, Jan 08</time></div>-->
         </div>
-        <p>Numerical approaches based on Lagrangian mechanics, particularly using the finite element method, dominate the analysis of solid mechanics problems.  However there are issues with mesh-based Lagrangian approaches for problems involving very large deformation in that the discretisation used to analyse the physical problem becomes distorted leading to inaccurate results and, in extreme cases, eventual breakdown of the numerics due to element inversion.</p>
+      <p>OffShore Wind (OSW) power cable failures currently account for 75% of the cost of all insurance claims associated with OSW projects and faults typically take 100+ days to rectify.  In shallow waters cables must be protected from anchors/fishing gear and the primary protection method is to bury the cable below the seabed.  The burial depth is a probabilistic compromise between economic cost of burial and risk to the cable being damaged.</p>
 
-<p>The <strong>Material Point Method</strong> (MPM) is an alternative to pure Lagrangian approaches and is well suited to problems involving very large deformations.  The method was developed in the 1990’s by Sulsky <em>et al.</em> [1] as a solid mechanics extension to the FLuid Implicit Particle (FLIP) method [2] which itself was developed from the Particle-In-Cell (PIC) method [3].  In the material point method, equilibrium computations take place on a background grid but the calculations are based on information (mass, volume, stress, state variables, etc.) held at material points that are convected through the background grid as the material deforms. This allows computations to take place on an undistorted background mesh (structured or unstructured) whilst modelling problems involving very large deformations. One way to summarise the material point method is: <em>a finite element method where the integration points (material points) are allowed to move independently of the mesh</em>.</p>
+      </p>The planned rapid expansion of offshore wind around the UK - installed capacity increasing 7.5 times over the next 30 years - will require new cable installations within some of the busiest shipping/fishing waters in the world and it is essential that these new cables are installed at the appropriate depth.  The industry currently lacks appropriate scientific tools to determine anchor penetration depths in different soil conditions relying instead on a binary switch between two cases based on vague descriptive soil conditions.  This approach has been shown to be highly conservative in some soils leading to unnecessarily deep (and costly) burial.  However, it is clearly under-conservative in other conditions as anchor-cable interactions dominate cable failures (accounting for 85% of failures).   This project, lead by Durham University in collaboration with the University of Dundee and the British Geological Survey (BGS), will deliver an anchor penetration prediction tool aligned to the Site Investigation (SI) data available along cabling routes.  We will provide an industry usable anchor penetration model allowing the OSW sector to answer the key cable burial question -  <em>how deep is deep enough?<em></p>
 
-<p>AMPLE, unlike most of the MPM community, adopts an implicit formulation.  The key steps in an implicit implementation of the material point method are shown below.</p>
+<hr />
 
-<p><img src="/assets/img/MPMsteps.jpg" alt="MPM steps" /></p>
+<p><img src="/assets/img/team.jpg" alt="Research Team" /></p>
 
 <hr />
 
